@@ -42,8 +42,7 @@ body{
     font-weight: 700;
 }
 .top-item img{
-    width: 440px;
-    height: 414px;
+    width: 100%;
     border: 2px solid #F1E4FF;
     border-radius: 50%;
     padding: 10px;
@@ -94,6 +93,24 @@ body{
 .see-button>i{
     margin-left: 10px;
 }
+
+/* ------------------
+    Discount offer section styles
+--------------------- */
+.discount-section{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.discount-section img{
+    width: 500px;
+    height: 400px;
+}
+.discount-dtails{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
 /* ------------------
     Footer styles
 --------------------- */
@@ -140,6 +157,41 @@ body{
     }
     .products{
         grid-template-columns: repeat(1, 1fr);
+        padding: 30px;
+    }
+    .discount-section{
+        display: grid;
+        grid-template-columns:  1fr;
+    }
+    .footer{
+        width: 100%;
+    }
+}
+/* Tablet divices */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+        margin: 0 20px;
+    }
+    .top-info{
+        margin: 20px;
+    }
+    .top-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-item img{
+        width: 100%;
+        height: 100%;
+    }
+    .top-title{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .products{
+        grid-template-columns: repeat(2, 1fr);
         padding: 30px;
     }
     .footer{
