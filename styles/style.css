@@ -101,7 +101,7 @@ body{
     background-color: #0A0826;
     color: white;
     text-align: center;
-    padding: 30px 30px;
+    padding: 30px ;
     font-family: 'Times New Roman', Times, serif;
 }
 .fab{
@@ -141,5 +141,8 @@ body{
     .products{
         grid-template-columns: repeat(1, 1fr);
         padding: 30px;
+    }
+    .footer{
+        width: 100%;
     }
 }
