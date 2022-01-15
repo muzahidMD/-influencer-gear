@@ -16,17 +16,15 @@ body{
     margin: 0 80px;
 }
 .top-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.top-item{
     display: flex;
     align-items: center;
 }
-.top-item{
-    width: 50%;
-}
 .top-info{
     margin-right: 200px;
-}
-.top-info h1{
-    margin-right: 100px;
 }
 .top-info a{
     text-decoration: none;
@@ -67,9 +65,6 @@ body{
     height: 490px;
     background-color: white;
     border-radius: 5px;
-    /* padding-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,4 +106,40 @@ body{
 }
 .fab{
     margin: 0 10px;
+}
+
+/* ------------------
+    Media Querys
+--------------------- */
+
+/* Mobile Divices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+        margin: 0 20px;
+    }
+    .top-section{
+        width: 100%;
+        display: block;
+    }
+    .top-info{
+        margin: 20px;
+    }
+    .top-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-item img{
+        width: 100%;
+        height: 100%;
+    }
+    .top-title{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px;
+    }
 }
